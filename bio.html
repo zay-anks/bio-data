@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Biodata Zay</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(circle at top, #1b1f3b, #050816);
+      color: #ffffff;
+    }
+
+    .biodata-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .biodata-card {
+      display: flex;
+      gap: 40px;
+      padding: 40px;
+      max-width: 900px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 30px rgba(138, 180, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    img {
+      width: 220px;
+      height: 280px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #2b2f77, #5a6cff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      text-align: center;
+      color: #dbe4ff;
+      box-shadow: inset 0 0 20px rgba(255,255,255,0.2);
+    }
+
+    .biodata-content h2 {
+      margin: 0 0 10px;
+      font-size: 28px;
+      color: #9bb4ff;
+      letter-spacing: 1px;
+    }
+
+    .biodata-content span {
+      color: #ffffff;
+      font-weight: 500;
+    }
+
+    .biodata-content p {
+      margin: 8px 0;
+      font-size: 15px;
+      line-height: 1.6;
+      color: #d6dcff;
+    }
+
+    .planet-line {
+      margin-top: 20px;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #7aa2ff, transparent);
+    }
+
+    button{
+        pointer-events: none;
+        width: 80px;
+        height: 30px;
+        background-color: #5a6cff ;
+        border-radius: 5px;
+        cursor: pointer;
+    
+    }
+
+
+    @media (max-width: 768px) {
+      .biodata-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+    .social-icons{
+    display: flex;
+    
+}
+
+.social-icons a{
+   margin-left: 20px;
+    color: rgb(55, 160, 189);
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover{
+    color: rgb(172, 79, 18);
+    transform: scale(1.2);
+}
+
+.bagian-btn
+{
+  display: flex;
+}
+  </style>
+</head>
+<body>
+
+<section class="biodata-section">
+  <div class="biodata-card">
+
+    <!-- Slot Foto -->
+    <div class="photo-slot">
+      <img src="orang-ganteng.jpg" alt="">
+    </div>
+
+    <!-- Biodata -->
+    <div class="biodata-content">
+      <h2>Renaisan Zaeni <span>[ Zay ]</span></h2>
+
+      <p><strong>TTL :</strong> Sidomulyo, 16 Juni 2009</p>
+      <p><strong>Umur :</strong> 16 Tahun</p>
+      <p><strong>Hobi :</strong> Membaca, tidur 😴, dan memasak 🍳</p>
+      <p><strong>Cita-cita :</strong> Chef</p>
+      <p><strong>Kontak :</strong> +62 851-6868-1025</p>
+      <div class="bagian-btn">
+
+        <a href="bio 2.html">
+          <button>more</button>
+        </a>
+                <div class="social-icons">
+                      <a href="https://instagram.com/zayiiiii_rz" target="_blank">
+                                <i class="fab fa-instagram"></i> 
+                            </a>
+                            
+                            <a href="https://tiktok.com/@ANGKASA_1.8" target="_blank">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            
+                             <a href="https://facebook.com/username" target="_blank">
+                                 <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </div>
+      </div>
+      <div class="planet-line"></div>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>

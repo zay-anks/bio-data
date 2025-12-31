@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #1e1e2f, #2c2c44);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 100px auto;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 36px;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .highlight {
+            color: #00ffd5;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>About Me</h1>
+
+        <p>
+            Halo 👋<br>
+            Nama gue <span class="highlight">[renaisan zaini]</span>.
+            Gue tertarik di dunia <span class="highlight">[belajar membuat website]</span> dan lagi fokus
+            belajar <span class="highlight">[front end devolopment]</span>.
+        </p>
+
+        <p>
+            Di waktu luang, gue biasanya ngelakuin hal-hal yang gue suka kayak
+            <span class="highlight">[membaca and masak masak yg paling gw suka]</span>.
+            Website ini gue bikin buat sharing dan dokumentasi perjalanan gue.
+        </p>
+
+        <p>
+            Target gue ke depan adalah terus berkembang dan bikin karya yang berguna 🚀
+        </p>
+
+        <footer>
+            © 2025 - [ANGKASA_1.8]
+        </footer>
+    </div>
+
+    <style>
+/* ===== PORTFOLIO ===== */
+.portfolio{
+    position:relative;
+    padding:120px 40px;
+    min-height:100vh;
+}
+
+.portfolio h2{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:70px;
+    letter-spacing:2px;
+}
+
+.portfolio-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+    gap:50px;
+    position:relative;
+    z-index:2;
+}
+
+/* CARD */
+.portfolio-card{
+    position:relative;
+    padding:30px;
+    background:rgba(255,255,255,.06);
+    backdrop-filter:blur(8px);
+    border-radius:22px;
+    box-shadow:0 0 30px rgba(125,249,255,.15);
+    transform:rotate(-2deg);
+    transition:.4s;
+    overflow:hidden;
+}
+
+.portfolio-card:nth-child(even){
+    transform:rotate(3deg);
+}
+
+.portfolio-card:hover{
+    transform:translateY(-15px) rotate(0deg) scale(1.03);
+    box-shadow:0 0 45px rgba(125,249,255,.4);
+}
+
+/* MINI PLANET */
+.mini-planet{
+    position:absolute;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:radial-gradient(circle at 30% 30%, #7df9ff, #3f87ff);
+    top:-25px;
+    right:-20px;
+    animation:spin 10s linear infinite;
+    opacity:.8;
+}
+
+@keyframes spin{
+    from{transform:rotate(0deg)}
+    to{transform:rotate(360deg)}
+}
+
+/* CONTENT */
+.portfolio-card h3{
+    margin:20px 0 10px;
+    color:#7df9ff;
+}
+
+.portfolio-card p{
+    font-size:14px;
+    line-height:1.6;
+    opacity:.85;
+}
+
+.tag{
+    display:inline-block;
+    margin-top:15px;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:12px;
+    background:rgba(125,249,255,.15);
+    border:1px solid rgba(125,249,255,.4);
+}
+</style>
+
+<section class="portfolio">
+
+    <h2>🚀 PORTOFOLIO ZAY</h2>
+
+    <div class="portfolio-grid">
+
+        <div class="portfolio-card">
+            <div class="mini-planet"></div>
+            <h3>Masakan Nusantara</h3>
+            <p>
+                Eksperimen memasak makanan tradisional dengan sentuhan modern.
+                Fokus rasa, plating, dan kebersihan.
+            </p>
+            <span class="tag">Chef</span>
+        </div>
+
+        <div class="portfolio-card">
+            <div class="mini-planet"></div>
+            <h3>Menu Harian</h3>
+            <p>
+                Membuat menu harian sederhana, murah, dan bergizi
+                untuk kebutuhan rumah tangga.
+            </p>
+            <span class="tag">Cooking</span>
+        </div>
+
+        <div class="portfolio-card">
+            <div class="mini-planet"></div>
+            <h3>Eksperimen Dapur</h3>
+            <p>
+                Uji coba resep baru, kombinasi rasa unik,
+                dan plating kreatif ala restoran.
+            </p>
+            <span class="tag">Creative</span>
+        </div>
+
+        <div class="portfolio-card">
+            <div class="mini-planet"></div>
+            <h3>Website Biodata Space</h3>
+            <p>
+                Website biodata bertema luar angkasa
+                dengan animasi planet dan astronot.
+            </p>
+            <span class="tag">Web</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+</body>
+</html>
